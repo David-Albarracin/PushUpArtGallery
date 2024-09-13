@@ -1,3 +1,4 @@
+
 :root{
   --header-hight: 4rem
 }
@@ -119,18 +120,4 @@ img{
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
-}
-
-.icon-button{
-  border: none;
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-}
-
-.icon-button:hover{
-  padding: 5px 5px;
-  background-color: var(--bs-gray-200);
 }
