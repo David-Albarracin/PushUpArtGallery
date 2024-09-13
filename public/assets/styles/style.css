@@ -1,5 +1,5 @@
-@import url('./_grid.css');
-@import url('./_layout.css');
+@import url('./public/assets/styles/_grid.css');
+@import url('./public/assets/styles/_layout.css');
 
 :root{
   --header-hight: 4rem
