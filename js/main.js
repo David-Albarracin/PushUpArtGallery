@@ -1,8 +1,15 @@
-function test() {
-    console.log(test);
-
+function toggleMenu() {
+    const menu = document.getElementById('toggleMenu');
+    
+    // Verificar si el menú está oculto (display: none) y cambiarlo a visible
+    if (menu.classList.contains('d-flex')) {
+        menu.classList.remove('d-flex');
+        menu.classList.add('d-none');
+    } else {
+        menu.classList.remove('d-none');
+        menu.classList.add('d-flex');
+    }
 }
-
 
 function getImages() {
     const gallery = [

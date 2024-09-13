@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CampusLands Museum of Art</title>
     <link rel="stylesheet" href="./public/assets/styles/style.css">
+    <link rel="stylesheet" href="./public/assets/styles/_grid.css">
+    <link rel="stylesheet" href="./public/assets/styles/_layout.css">
+
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
     <script src="./js/main.js" defer></script>
 </head>
 
 <body>
     <header class="px-3 py-4">
-        <nav class="d-flex w-100 justify-content-between">
+        <nav class="d-flex w-100 justify-content-between align-items-center">
             <a class="text-dark" href="/">
                 CampusLands Museum of Art
             </a>
-            <ul class="d-flex gap-3">
+            <ul class="d-md-flex d-none gap-3">
                 <li>
                     <a class="nav-link" href="#exhibitions">
                         Exhibitions
@@ -38,7 +41,36 @@
                     </a>
                 </li>
             </ul>
+            <button onclick="toggleMenu()" class="d-md-none icon-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </button>
         </nav>
+        <div id="toggleMenu" class="d-none d-md-none">
+            <ul class="w-100">
+                <li class="my-2 d-flex">
+                    <a class="py-3 w-100 bg-body-secondary text-dark d-flex  justify-content-center" href="#exhibitions">
+                        Exhibitions
+                    </a>
+                </li>
+                <li class="my-2">
+                    <a class="py-3 w-100 bg-body-secondary text-dark d-flex justify-content-center" href="#galery">
+                        Gallery
+                    </a>
+                </li>
+                <li class="my-2">
+                    <a class="py-3 w-100 bg-body-secondary text-dark d-flex justify-content-center" href="#Events">
+                        Events
+                    </a>
+                </li>
+                <li class="my-2">
+                    <a class="py-3 w-100 bg-body-secondary text-dark d-flex justify-content-center" href="#visit">
+                        Visit
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="hero">
